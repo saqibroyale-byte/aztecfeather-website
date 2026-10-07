@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Aztec Feather | Handmade Boho Bags">
+<meta property="og:description" content="Handmade boho bags from India, delivered across the UAE. Order on WhatsApp, pay on delivery.">
+<meta property="og:image" content="https://aztecfeather.com/img/evil-eye-tote-4.jpg">
+<title>Aztec Feather | Handmade Boho Bags in Dubai</title>
+<meta name="description" content="Handmade boho bags from India, delivered across the UAE. Beaded jute totes, fringe slings and coin clutches by Aztec Feather.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: a market-stall shop. Photo-led hero, a tight product grid, one product sheet that opens over the page. */
+:root{
+  --jute:#f4ede1;      /* page ground, raw jute */
+  --hessian:#e7dcc8;   /* panels */
+  --ink:#2c2824;       /* text */
+  --muted:#6e645a;
+  --plum:#6b4f5a;      /* brand accent from the existing site */
+  --sage:#4f6b63;      /* second accent, delivery + trust */
+  --card:#fffaf2;
+  --line:#d8ccb7;
+  --on-accent:#fffaf2;
+  --display:"Young Serif",Georgia,"Times New Roman",serif;
+  --body:"Figtree",-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --jute:#1d1a17;--hessian:#28241f;--ink:#efe6d8;--muted:#b3a796;--plum:#c99aaa;--sage:#93b5aa;--card:#24201c;--line:#3c362f;--on-accent:#1d1a17;color-scheme:dark}}
+:root[data-theme="dark"]{--jute:#1d1a17;--hessian:#28241f;--ink:#efe6d8;--muted:#b3a796;--plum:#c99aaa;--sage:#93b5aa;--card:#24201c;--line:#3c362f;--on-accent:#1d1a17;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--jute);color:var(--ink);font:400 16px/1.6 var(--body);margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
+:focus-visible{outline:2px solid var(--plum);outline-offset:3px;border-radius:4px}
+
+/* top bar */
+.notice{background:var(--sage);color:var(--on-accent);font-size:.85rem;text-align:center;padding:8px 16px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--jute) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font-family:var(--display);font-size:1.35rem;white-space:nowrap;text-decoration:none;letter-spacing:.02em;display:flex;align-items:center;gap:8px}
+.logo svg{width:22px;height:22px;color:var(--plum)}
+nav{display:flex;gap:22px;align-items:center;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font:600 .95rem var(--body);text-decoration:none;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:var(--jute)}
+.btn.primary{background:var(--plum);border-color:var(--plum);color:var(--on-accent)}
+.btn.primary:hover{filter:brightness(1.08);background:var(--plum);color:var(--on-accent)}
+.btn.small{padding:9px 16px;font-size:.88rem}
+@media (max-width:720px){nav .hide-sm{display:none}nav{gap:14px}.logo{font-size:1.15rem}nav .btn.small{padding:8px 14px;white-space:nowrap}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:56px 64px}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4.2rem)}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:44ch;margin:20px 0 28px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:3/2;max-width:100%}
+.hero-art img{border-radius:6px;object-fit:cover;width:100%;height:100%;min-width:0;min-height:0}
+.hero-art img:first-child{grid-row:span 2}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:.9rem;color:var(--muted)}
+.facts span::before{content:"✦ ";color:var(--plum)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:32px;padding-block:32px 40px}}
+
+/* shop */
+section{padding-block:64px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-top:8px}
+.sec-head p{color:var(--muted);max-width:46ch;margin:0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 16px;font:500 .9rem var(--body);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--jute);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
+.prod{display:flex;flex-direction:column;gap:12px}
+.prod .ph{position:relative;border-radius:6px;overflow:hidden;background:var(--card);cursor:pointer;border:0;padding:0;aspect-ratio:1}
+.prod .ph img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.prod .ph img.alt{position:absolute;inset:0;opacity:0}
+.prod .ph:hover img.alt{opacity:1}
+.tag{position:absolute;top:10px;left:10px;background:var(--card);color:var(--ink);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.prod .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.prod h3{font-size:1.2rem}
+.price{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.prod p{margin:0;color:var(--muted);font-size:.93rem}
+.prod .acts{display:flex;gap:8px;flex-wrap:wrap}
+
+/* offer */
+.offer{background:var(--plum);color:var(--on-accent);border-radius:8px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.offer h2{font-size:clamp(1.6rem,3vw,2.3rem)}
+.offer p{margin:8px 0 0;opacity:.88;max-width:52ch}
+.offer .btn{border-color:var(--on-accent);color:var(--on-accent)}
+.offer .btn:hover{background:var(--on-accent);color:var(--plum)}
+
+/* how to order */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;counter-reset:s}
+.step{border-top:1.5px solid var(--ink);padding-top:16px}
+.step b{font-family:var(--display);font-weight:400;font-size:1.25rem;display:block;margin-bottom:6px}
+.step b::before{counter-increment:s;content:counter(s) ". ";color:var(--plum)}
+.step p{margin:0;color:var(--muted)}
+@media (max-width:720px){.steps{grid-template-columns:1fr}}
+
+/* story */
+.story{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+.story img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.story p{color:var(--muted);max-width:58ch}
+@media (max-width:860px){.story{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--hessian);border-radius:8px;padding:40px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px}
+.contact ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.contact li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px;flex-wrap:wrap}
+.contact li span{color:var(--muted)}
+.contact a{font-weight:600}
+@media (max-width:760px){.contact{grid-template-columns:1fr;padding:28px 22px}}
+footer{padding-block:36px;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* product sheet */
+dialog{border:0;padding:0;border-radius:10px;max-width:min(960px,calc(100vw - 24px));width:100%;background:var(--card);color:var(--ink);max-height:calc(100dvh - 24px)}
+dialog::backdrop{background:rgb(20 16 12 / .55)}
+.sheet{display:grid;grid-template-columns:1.05fr 1fr}
+.gal{padding:16px;display:grid;gap:10px;align-content:start}
+.gal .big{aspect-ratio:1;object-fit:cover;width:100%;border-radius:6px}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap}
+.thumbs button{border:2px solid transparent;padding:0;border-radius:4px;overflow:hidden;width:64px;height:64px;cursor:pointer;background:none}
+.thumbs button[aria-current="true"]{border-color:var(--plum)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.info{padding:28px 28px 28px 12px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.info h3{font-size:1.9rem}
+.info .price{font-size:1.4rem}
+.info ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:6px}
+.info .note{font-size:.85rem;color:var(--muted);background:var(--jute);border-radius:6px;padding:10px 12px}
+.info .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.close{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:0;background:var(--jute);color:var(--ink);font-size:1.3rem;cursor:pointer;z-index:2}
+@media (max-width:760px){.sheet{grid-template-columns:1fr}.info{padding:4px 20px 24px}}
+</style>
+</head>
+<body>
+
+
+<div class="notice">Free delivery across the UAE · Cash on delivery</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Aztec Feather home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 3C11 4 6 9 5 19l2 2c1-4 3-7 6-9M19 3c0 7-4 12-10 13M19 3 7 21"/></svg>
+      Aztec Feather
+    </a>
+    <nav aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a class="hide-sm" href="#how">How to order</a>
+      <a class="hide-sm" href="#story">Our story</a>
+      <a class="btn small primary" id="nav-wa" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Handmade in India · Shipped from Dubai</div>
+      <h1>Bags with beads, coins and a little wild spirit.</h1>
+      <p class="lead">Every Aztec Feather bag is stitched and beaded by hand by artisans in India. No two are exactly alike, and each one is ready to ship to you from Dubai.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#shop">Shop the collection</a>
+        <a class="btn" href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener">See us on Instagram</a>
+      </div>
+      <div class="facts"><span>4,500+ Instagram followers</span><span>Delivered in the UAE</span><span>Cash on delivery</span></div>
+    </div>
+    <div class="hero-art">
+      <img src="img/evil-eye-tote-4.jpg" alt="Evil eye beaded jute tote hanging on a balcony railing" width="1000" height="1000">
+      <img src="img/black-coin-clutch-2.jpg" alt="Black beaded clutch with antique gold coins" width="1000" height="1000">
+      <img src="img/cream-fringe-sling-2.jpg" alt="Cream fringe sling bag with coins and mirror work" width="1000" height="1000">
+    </div>
+  </div>
+
+  <section id="shop">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">The collection</div><h2>Shop the bags</h2></div>
+        <p>Tap any bag for more photos and details. Order on WhatsApp in one tap, and pay when it arrives.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter bags">
+        <button class="chip" id="f-all" aria-pressed="true" data-f="all">All bags</button>
+        <button class="chip" id="f-tote" aria-pressed="false" data-f="tote">Totes</button>
+        <button class="chip" id="f-clutch" aria-pressed="false" data-f="clutch">Clutches</button>
+        <button class="chip" id="f-sling" aria-pressed="false" data-f="sling">Slings</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="offer">
+        <div>
+          <h2>Pick any two, save AED 30</h2>
+          <p>Mix a tote with a clutch, or get a matching pair for a friend. Mention "TWO" on WhatsApp and we take AED 30 off your order.</p>
+        </div>
+        <a class="btn" id="offer-wa" href="#" target="_blank" rel="noopener">Claim on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><div><div class="eyebrow">Ordering</div><h2>How to order</h2></div></div>
+      <div class="steps">
+        <div class="step"><b>Choose your bag</b><p>Tap "Order on WhatsApp" under the bag. Your message opens with the bag name and price filled in.</p></div>
+        <div class="step"><b>Confirm on WhatsApp</b><p>Send your name and address. We reply with more photos or a video of your exact bag if you'd like one.</p></div>
+        <div class="step"><b>Pay on delivery</b><p>We deliver anywhere in the UAE for free. Pay cash when your bag arrives.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" style="padding-top:0">
+    <div class="wrap story">
+      <img src="img/santorini-tote-2.jpg" alt="Santorini beaded tote with blue domes and white houses" width="1000" height="1000" loading="lazy">
+      <div>
+        <div class="eyebrow">Our story</div>
+        <h2 style="font-size:clamp(1.9rem,3.6vw,2.8rem);margin:8px 0 18px">From Indian exhibitions to Dubai brunches</h2>
+        <p>Aztec Feather started in India, selling handmade boho bags at exhibitions and online. Shoppers loved the beadwork, the coins and the fringe, and the community grew to more than 4,500 people on Instagram.</p>
+        <p>Now we're based in Dubai. We still work with the same artisan suppliers, and we bring in small batches of each design. Because every bag is made by hand, the beads and colours vary slightly from piece to piece.</p>
+        <p><b>Caring for your bag:</b> spot clean gently with a dry or slightly damp cloth. Don't wash or soak it, and store it flat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap contact">
+      <div>
+        <div class="eyebrow">Say hello</div>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.5rem);margin-top:8px">Questions, gifts or bulk orders?</h2>
+        <p style="color:var(--muted);max-width:44ch">Message us on WhatsApp. We can send you a video of any bag before you order.</p>
+      </div>
+      <ul>
+        <li><span>WhatsApp (UAE)</span><a id="c-wa" href="#" target="_blank" rel="noopener">+971 58 257 1491</a></li>
+        <li><span>WhatsApp (India)</span><a href="https://wa.me/918130626722" target="_blank" rel="noopener">+91 81306 26722</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener">@aztecfeather</a></li>
+        <li><span>Email</span><span style="color:var(--ink);font-weight:600;user-select:all">aztecfeather@gmail.com</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<div class="wrap"><footer><span>© 2026 Aztec Feather · Handmade boho bags</span><span>Dubai, UAE · India</span></footer></div>
+
+<dialog id="sheet" aria-labelledby="s-name">
+  <button class="close" id="s-close" aria-label="Close">×</button>
+  <div class="sheet">
+    <div class="gal"><img class="big" id="s-big" alt=""><div class="thumbs" id="s-thumbs"></div></div>
+    <div class="info">
+      <div class="eyebrow" id="s-type"></div>
+      <h3 id="s-name"></h3>
+      <div class="price" id="s-price"></div>
+      <p id="s-desc" style="margin:0"></p>
+      <ul id="s-points"></ul>
+      <div class="note">Handmade, so beadwork and colours vary slightly from the photos. Free UAE delivery. Cash on delivery.</div>
+      <div class="acts" id="s-acts"></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const WA = "971582571491";
+// Card payment links: paste each bag's Stripe Payment Link here once the Stripe account is ready.
+const PRODUCTS = [
+  {id:"evil-eye-tote",type:"tote",tag:"Bestseller",name:"Evil Eye Beaded Tote",price:149,n:4,
+   blurb:"A rainbow evil eye, hand-beaded onto natural jute.",
+   desc:"A big, joyful tote with a hand-beaded evil eye in rainbow colours. The frayed jute edges give it a relaxed beach look.",
+   points:["Hand-beaded on natural jute","Roomy open tote with sturdy jute handles","Fits phone, wallet, sunglasses and a towel","Great with kaftans, abayas and summer dresses"],stripe:""},
+  {id:"santorini-tote",type:"tote",tag:"",name:"Santorini Beaded Tote",price:149,n:4,
+   blurb:"Blue domes and white houses in fine seed beads.",
+   desc:"A Greek-island scene worked in fine seed beads, with woven blue-and-white side panels and striped handles.",
+   points:["Seed-bead Santorini scene","Woven blue and white side panels","Striped navy and white handles","Made for the beach, pool and travel"],stripe:""},
+  {id:"cream-fringe-sling",type:"sling",tag:"Statement",name:"Cream Fringe Coin Sling",price:139,n:4,
+   blurb:"Cotton fringe, metal coins and mirror work.",
+   desc:"Dramatic cream cotton fringe around a beaded centre panel with coins and mirrors. Wear it across the body and keep your hands free.",
+   points:["Cotton fringe with metal coins and mirrors","Flap closure","Adjustable crossbody strap","Fits phone, keys, cards and lipstick"],stripe:""},
+  {id:"black-cream-sequin-clutch",type:"clutch",tag:"",name:"Black & Cream Sequin Clutch",price:119,n:4,
+   blurb:"Copper sequins, mirrors and a turquoise centre stone.",
+   desc:"Our most detailed clutch: copper sequins, mirror work and pearls around a turquoise centre stone, on black and cream.",
+   points:["Sequins, mirrors, pearls and a turquoise stone","Envelope flap","Sling strap for crossbody wear","For weddings, parties and nights out"],stripe:""},
+  {id:"black-coin-clutch",type:"clutch",tag:"",name:"Black Coin Clutch",price:119,n:3,
+   blurb:"Hand-beaded leaves with antique gold coins.",
+   desc:"An evening clutch with a hand-beaded leaf pattern, mirror sequins and antique gold coins along the edges.",
+   points:["Beaded leaf pattern on black","Antique gold coin trim","Detachable sling strap","Looks great with a black abaya"],stripe:""},
+  {id:"taupe-fringe-clutch",type:"clutch",tag:"",name:"Taupe Sunburst Clutch",price:119,n:3,
+   blurb:"Soft jute fringe around a beaded sunburst.",
+   desc:"Soft taupe jute fringe frames a hand-beaded sunburst with sequins and pearls. An earthy neutral that goes with almost anything.",
+   points:["Beaded sunburst with sequins and pearls","Jute fringe trim","Envelope flap with detachable sling strap","Pairs with linen, denim and evening outfits"],stripe:""}
+];
+const typeName={tote:"Tote",clutch:"Clutch",sling:"Crossbody sling"};
+const waLink=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
+const orderMsg=p=>`Hi Aztec Feather! I'd like to order the ${p.name} (AED ${p.price}). Is it available?`;
+const img=(p,i)=>`img/${p.id}-${i}.jpg`;
+
+for(const id of ["nav-wa","c-wa"]) document.getElementById(id).href=waLink("Hi Aztec Feather! I'd like to see your bag collection.");
+document.getElementById("offer-wa").href=waLink("Hi Aztec Feather! TWO - I'd like to order two bags.");
+
+const grid=document.getElementById("grid");
+function actions(p){
+  let h=`<a class="btn small primary" href="${waLink(orderMsg(p))}" target="_blank" rel="noopener">Order on WhatsApp</a>`;
+  if(p.stripe) h+=`<a class="btn small" href="${p.stripe}" target="_blank" rel="noopener">Pay by card</a>`;
+  return h;
+}
+function render(f){
+  grid.innerHTML=PRODUCTS.filter(p=>f==="all"||p.type===f).map(p=>`
+    <article class="prod">
+      <button class="ph" data-open="${p.id}" aria-label="View ${p.name}">
+        <img src="${img(p,1)}" alt="${p.name}" loading="lazy" width="1000" height="1000">
+        <img class="alt" src="${img(p,2)}" alt="" loading="lazy" width="1000" height="1000">
+        ${p.tag?`<span class="tag">${p.tag}</span>`:""}
+      </button>
+      <div class="row"><h3>${p.name}</h3><span class="price">AED ${p.price}</span></div>
+      <p>${p.blurb}</p>
+      <div class="acts">${actions(p)}<button class="btn small" data-open="${p.id}">Details</button></div>
+    </article>`).join("");
+}
+render("all");
+document.querySelectorAll(".chip").forEach(c=>c.addEventListener("click",()=>{
+  document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",String(x===c)));
+  render(c.dataset.f);
+}));
+
+const dlg=document.getElementById("sheet");
+function show(p,i){
+  document.getElementById("s-big").src=img(p,i);
+  document.getElementById("s-big").alt=`${p.name}, photo ${i}`;
+  document.querySelectorAll("#s-thumbs button").forEach((b,k)=>b.setAttribute("aria-current",String(k+1===i)));
+}
+function openP(id){
+  const p=PRODUCTS.find(x=>x.id===id); if(!p) return;
+  document.getElementById("s-type").textContent=typeName[p.type];
+  document.getElementById("s-name").textContent=p.name;
+  document.getElementById("s-price").textContent="AED "+p.price;
+  document.getElementById("s-desc").textContent=p.desc;
+  document.getElementById("s-points").innerHTML=p.points.map(x=>`<li>${x}</li>`).join("");
+  document.getElementById("s-acts").innerHTML=actions(p).replaceAll("btn small","btn");
+  const th=document.getElementById("s-thumbs"); th.innerHTML="";
+  for(let i=1;i<=p.n;i++){const b=document.createElement("button");b.setAttribute("aria-label","Photo "+i);b.innerHTML=`<img src="${img(p,i)}" alt="" loading="lazy">`;b.onclick=()=>show(p,i);th.appendChild(b)}
+  show(p,1);
+  dlg.showModal();
+}
+grid.addEventListener("click",e=>{const b=e.target.closest("[data-open]"); if(b) openP(b.dataset.open)});
+document.getElementById("s-close").onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg) dlg.close()});
+</script>
+
+</body>
+</html>
