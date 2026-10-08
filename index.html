@@ -3,210 +3,479 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aztec Feather | Handcrafted Boho Bags in Dubai</title>
-<meta name="description" content="Handcrafted beaded jute totes, fringe slings and coin clutches from India, delivered across the UAE. Order on WhatsApp.">
-<meta property="og:title" content="Aztec Feather | Handcrafted Boho Bags">
-<meta property="og:description" content="Handcrafted boho bags from India, delivered across the UAE. Order on WhatsApp.">
+<title>Aztec Feather | Handmade Boho Bags in Dubai &amp; UAE</title>
+<meta name="description" content="Hand-beaded jute totes, fringe shoulder bags and coin clutches, handmade by artisans in India and delivered across the UAE. Order on WhatsApp.">
+<link rel="canonical" href="https://aztecfeather.com/">
+<meta name="theme-color" content="#f6efe3">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aztec Feather">
+<meta property="og:title" content="Aztec Feather | Handmade Boho Bags">
+<meta property="og:description" content="Hand-beaded boho bags, handmade in India and delivered across the UAE.">
 <meta property="og:image" content="https://aztecfeather.com/img/share.jpg">
 <meta property="og:url" content="https://aztecfeather.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="preload" href="fonts/marcellus.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--cream:#eee5d7;--paper:#f8f4ec;--ink:#302d29;--coral:#a5634d;--teal:#58716b;--mustard:#b99b62;--plum:#6b585d;--line:#d5cab9;--muted:#6b665c}
+@font-face{font-family:Marcellus;src:url(fonts/marcellus.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Figtree;font-weight:400;src:url(fonts/figtree-400.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Figtree;font-weight:600;src:url(fonts/figtree-600.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Figtree;font-weight:700;src:url(fonts/figtree-700.woff2) format("woff2");font-display:swap}
+:root{
+  --cream:#f6efe3;--sand:#ede3d2;--paper:#fbf8f2;--ink:#2f241e;--ink2:#5b4f46;--muted:#7a6e63;
+  --ter:#a5634d;--ter-d:#8c4f3b;--mus:#c9a35f;--teal:#3f7a73;--teal-d:#2f5f59;--line:#e2d7c5;
+  --serif:Marcellus,Georgia,serif;--sans:Figtree,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --wrap:1240px;--gut:clamp(16px,4vw,40px);--r:14px;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ter);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font:700 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--ter);margin:0 0 16px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0}
+h2{font-size:clamp(32px,4.2vw,52px);line-height:1.08}
+.lead{color:var(--ink2);font-size:17px;line-height:1.75;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font:700 14px/1 var(--sans);letter-spacing:.02em;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,transform .2s,border-color .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:#000}
+.btn-ter{background:var(--ter);color:#fff}.btn-ter:hover{background:var(--ter-d)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}.btn-line:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#1f7a52;color:#fff}.btn-wa:hover{background:#17623f}
+.btn svg{width:18px;height:18px;flex:none}
+.sec{padding:clamp(64px,9vw,112px) 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:40px;flex-wrap:wrap}
+.head .lead{max-width:440px}
 
-.announcement{background:var(--teal);color:#fff;text-align:center;padding:10px 20px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-header{height:94px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 clamp(16px,5vw,72px);border-bottom:1px solid var(--line);background:rgba(248,244,236,.96);position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
-.brand{width:190px;height:64px;display:flex;align-items:center}
-.brand img{width:100%;height:100%;object-fit:contain}
-nav{display:flex;gap:28px;font-size:13px;font-weight:800}
-nav a:hover{color:var(--coral)}
-.pill{min-height:48px;padding:0 22px;border-radius:100px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;transition:.2s;border:0;cursor:pointer;font-family:inherit}
-.pill:hover{transform:translateY(-2px)}
-.dark{background:var(--ink);color:#fff}
-.coral{background:var(--coral);color:#fff}
+/* announcement + header */
+.announce{background:var(--teal-d);color:#fff;font:600 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:11px var(--gut)}
+.announce span{opacity:.6;margin:0 10px}
+header{position:sticky;top:0;z-index:30;background:rgba(251,248,242,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
+.logo{display:block;width:172px}
+.logo img{width:100%;height:auto}
+.nav{display:flex;gap:30px;font:600 14px/1 var(--sans)}
+.nav a{padding:8px 0;border-bottom:1px solid transparent}
+.nav a:hover{border-color:var(--ter);color:var(--ter)}
+.tools{display:flex;justify-content:flex-end;align-items:center;gap:14px}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;cursor:pointer}
+.icon-btn svg{width:20px;height:20px}
+.menu-btn{display:none}
+.tools .btn{min-height:44px;padding:0 20px;font-size:13px}
+.mnav{display:none}
 
-.hero{display:grid;grid-template-columns:1fr 1fr;background:var(--cream);overflow:hidden}
-.hero-copy{padding:100px clamp(24px,7vw,105px);display:flex;justify-content:center;flex-direction:column}
-.eyebrow{font-size:11px;font-weight:900;letter-spacing:.2em;color:var(--coral);margin:0 0 22px}
-.hero h1,.section h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.04em}
-.hero h1{font-size:clamp(52px,6vw,92px);line-height:.95;margin:0;max-width:650px}
-.hero h1 em{color:var(--teal);font-weight:500}
-.hero-copy>p:not(.eyebrow){font-size:18px;line-height:1.7;color:#5e5a51;max-width:560px;margin:28px 0}
-.actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap}
-.text-link{font-size:13px;font-weight:800;border-bottom:1px solid #777269;padding-bottom:4px}
-.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:34px;font-size:13px;color:#5e5a51}
-.hero-facts span::before{content:"✦ ";color:var(--coral)}
-.hero-art{position:relative;background:var(--mustard);overflow:hidden;min-height:640px}
-.hero-art>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
-.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(27,24,19,.3))}
-.scribble{position:absolute;right:8%;bottom:9%;font-family:Georgia,serif;font-size:20px;transform:rotate(-5deg);color:#fff;z-index:2;text-shadow:0 2px 12px rgba(0,0,0,.4)}
-.scribble strong{font-size:30px}
+/* hero */
+.hero{background:var(--cream);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:min(680px,calc(100vh - 120px))}
+.hero-copy{padding:clamp(56px,8vw,110px) var(--gut) clamp(56px,8vw,110px) max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(46px,6.2vw,84px);line-height:1.02;max-width:620px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero .lead{max-width:520px;margin:26px 0 34px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{display:flex;gap:10px;align-items:center;margin-top:34px;color:var(--ink2);font-size:14px}
+.dots{display:flex}
+.dots i{width:30px;height:30px;border-radius:50%;border:2px solid var(--cream);background-size:cover;background-position:center;margin-left:-8px}
+.dots i:first-child{margin-left:0}
+.hero-art{position:relative;min-height:460px}
+.hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero-tag{position:absolute;left:24px;bottom:24px;background:rgba(251,248,242,.95);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:2px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.hero-tag small{font:700 10px/1.2 var(--sans);letter-spacing:.18em;color:var(--ter);text-transform:uppercase}
+.hero-tag b{font:400 19px/1.2 var(--serif)}
+.hero-tag span{font-size:13px;color:var(--ink2)}
 
-.marquee{min-height:65px;background:var(--plum);color:#fff;display:flex;align-items:center;justify-content:space-around;gap:18px;padding:15px 25px;font-size:11px;font-weight:900;letter-spacing:.16em;flex-wrap:wrap}
-.marquee i{color:var(--mustard);font-size:18px;font-style:normal}
+/* trust */
+.trust{border-bottom:1px solid var(--line);background:var(--paper)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{display:flex;gap:14px;align-items:center;padding:26px 18px}
+.trust-item+.trust-item{border-left:1px solid var(--line)}
+.trust-item svg{width:30px;height:30px;flex:none;color:var(--ter)}
+.trust-item b{display:block;font:600 14px/1.3 var(--sans)}
+.trust-item span{display:block;font-size:13px;color:var(--muted);line-height:1.4}
 
-.section{padding:100px max(6vw,20px)}
-.section h2{font-size:clamp(40px,5vw,66px);line-height:1.02;margin:0}
-.section-head{display:grid;grid-template-columns:1fr .7fr;gap:80px;align-items:end}
-.section-head>p{line-height:1.75;color:var(--muted);margin:0}
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--sand);cursor:pointer;border:0;padding:0;text-align:left}
+.cat img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.cat:hover img{transform:scale(1.04)}
+.cat:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(30,22,16,.62))}
+.cat span{position:absolute;left:24px;right:24px;bottom:22px;z-index:1;color:#fff;display:flex;justify-content:space-between;align-items:end}
+.cat b{font:400 30px/1 var(--serif)}
+.cat em{font:600 13px/1 var(--sans);font-style:normal;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:3px}
 
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:44px}
-.chip{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:100px;padding:9px 18px;font:800 12px Arial,sans-serif;letter-spacing:.06em;cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
-.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:28px}
-.product-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
-.product-card:hover{transform:translateY(-5px);box-shadow:0 22px 45px rgba(38,37,34,.1)}
-.product-photo{position:relative;height:420px;overflow:hidden;background:#e8dfce;border:0;padding:0;cursor:pointer;width:100%}
-.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.product-card:hover .product-photo img{transform:scale(1.03)}
-.badge{position:absolute;top:14px;left:14px;background:var(--paper);color:var(--ink);font-size:10px;font-weight:900;letter-spacing:.14em;padding:6px 12px;border-radius:100px}
-.photo-count{position:absolute;right:14px;bottom:14px;background:rgba(48,45,41,.75);color:#fff;font-size:11px;font-weight:800;padding:6px 10px;border-radius:100px}
-.product-info{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
-.product-info small{font-size:10px;letter-spacing:.16em;color:var(--coral);font-weight:900;text-transform:uppercase}
-.product-info h3{font-family:Georgia,serif;font-size:24px;font-weight:500;line-height:1.15;margin:0}
-.product-info p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
-.price{font-family:Georgia,serif;font-size:22px}
-.card-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:10px;flex-wrap:wrap}
-.card-actions .pill{min-height:42px;font-size:12px;padding:0 18px}
-.link-btn{background:none;border:0;padding:0 0 4px;border-bottom:1px solid #918878;font:800 12px Arial,sans-serif;cursor:pointer;color:var(--ink)}
-.collection-note{margin-top:28px;border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
-.collection-note span{font-family:Georgia,serif;font-size:25px}
-.collection-note p{margin:0;color:var(--muted)}
-.collection-note a{color:var(--coral);font-weight:800}
+/* products */
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 18px;font:600 13px/1 var(--sans);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 24px}
+.card{display:flex;flex-direction:column;gap:14px}
+.card-media{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--sand);border:0;padding:0;cursor:pointer;width:100%}
+.card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .45s,transform .7s}
+.card-media img.alt{opacity:0}
+.card:hover .card-media img.alt{opacity:1}
+.card:hover .card-media img{transform:scale(1.03)}
+.badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--paper);font:700 10px/1 var(--sans);letter-spacing:.16em;padding:7px 11px;border-radius:999px}
+.quick{position:absolute;left:14px;right:14px;bottom:14px;z-index:1;background:rgba(251,248,242,.96);border-radius:999px;padding:12px;font:600 13px/1 var(--sans);text-align:center;opacity:0;transform:translateY(8px);transition:.25s}
+.card:hover .quick,.card-media:focus-visible .quick{opacity:1;transform:none}
+.card-body{display:flex;justify-content:space-between;gap:16px;align-items:start}
+.card-body small{display:block;font:700 10px/1.2 var(--sans);letter-spacing:.16em;color:var(--ter);text-transform:uppercase;margin-bottom:6px}
+.card-body h3{font-size:21px;line-height:1.2}
+.card-body p{margin:6px 0 0;font-size:14px;color:var(--muted);line-height:1.5}
+.price{font:600 16px/1.2 var(--sans);white-space:nowrap}
+.card-actions{display:flex;gap:10px;margin-top:auto}
+.card-actions .btn{flex:1;min-height:44px;font-size:13px;padding:0 14px}
+.more-note{margin-top:44px;padding:26px 28px;border:1px dashed var(--mus);border-radius:var(--r);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:#fff}
+.more-note b{font:400 22px/1.3 var(--serif)}
+.more-note p{margin:4px 0 0;color:var(--muted);font-size:14px}
 
-.story{background:var(--teal);color:#fff;display:grid;grid-template-columns:.85fr 1fr;gap:9vw;align-items:center}
-.story .eyebrow{color:#d8bd88}
-.story p:not(.eyebrow){font-size:17px;line-height:1.8;color:#d5ebe7}
-.story-art{height:460px;border:1px solid rgba(255,255,255,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;font-family:Georgia,serif;font-size:44px}
-.thread{height:90px;width:1px;background:var(--mustard);position:relative}
-.thread:after{content:"✦";position:absolute;color:var(--mustard);left:-7px;top:31px}
+/* craft */
+.craft{background:var(--teal-d);color:#fff}
+.craft-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.craft-img{border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;position:relative}
+.craft-img img{width:100%;height:100%;object-fit:cover}
+.craft .eyebrow{color:var(--mus)}
+.craft .lead{color:#d6e6e2;margin-top:20px}
+.points{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:22px}
+.points li{display:grid;grid-template-columns:44px 1fr;gap:14px}
+.points b{display:block;font:400 21px/1.3 var(--serif);margin-bottom:2px}
+.points span{color:#c6dcd7;font-size:15px}
+.num{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;font:400 17px/1 var(--serif);color:var(--mus)}
 
-.how{background:var(--paper)}
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:50px}
-.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:12px}
-.step small{font-size:10px;letter-spacing:.2em;color:var(--coral);font-weight:900}
-.step strong{font-family:Georgia,serif;font-size:28px;font-weight:500}
-.step p{margin:0;color:var(--muted);line-height:1.6;font-size:15px}
+/* story */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.stat{border-top:1px solid var(--line);padding-top:16px}
+.stat b{display:block;font:400 34px/1 var(--serif);color:var(--ter)}
+.stat span{font-size:13px;color:var(--muted)}
+.route{background:var(--cream);border-radius:var(--r);padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:20px}
+.route-row{display:flex;align-items:center;gap:18px}
+.route-row b{font:400 30px/1 var(--serif);min-width:110px}
+.route-row span{color:var(--ink2);font-size:15px}
+.route-line{width:1px;height:34px;background:var(--mus);margin-left:20px}
+.pin{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none;border:1px solid var(--line)}
+.pin svg{width:20px;height:20px;color:var(--ter)}
 
-.order{text-align:center;background:var(--cream)}
-.order>p:not(.eyebrow){color:#676258;font-size:18px}
-.order-actions{display:grid;grid-template-columns:repeat(2,minmax(0,390px));justify-content:center;gap:18px;margin-top:50px}
-.country-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;text-align:left;display:flex;flex-direction:column;gap:10px;transition:.2s}
-.country-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(38,37,34,.09)}
-.country-card small{font-size:10px;letter-spacing:.2em;color:var(--coral);font-weight:900}
-.country-card strong{font-family:Georgia,serif;font-size:38px;font-weight:500}
-.country-card span{font-size:13px;color:#716b60}
+/* insta */
+.insta{background:var(--cream)}
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.insta-grid a{position:relative;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:var(--sand)}
+.insta-grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.insta-grid a:hover img{transform:scale(1.06)}
+.insta-grid a:after{content:"";position:absolute;inset:0;background:rgba(47,36,30,0);transition:.3s}
+.insta-grid a:hover:after{background:rgba(47,36,30,.18)}
 
-footer{background:var(--ink);color:#fff;padding:52px max(6vw,20px);display:grid;grid-template-columns:250px 1fr 1fr;align-items:center;gap:50px}
-footer .logo-wrap{width:200px}
-footer .logo-wrap img{width:100%;height:auto}
-footer>div{display:flex;flex-direction:column;gap:10px}
-footer a,footer p,footer span{font-size:13px;color:#cbc4b8;line-height:1.7}
-footer p{text-align:right;margin:0}
+/* gifting */
+.gift{display:grid;grid-template-columns:1.2fr 1fr;border-radius:var(--r);overflow:hidden;background:var(--ink);color:#fff}
+.gift-copy{padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;gap:18px;justify-content:center}
+.gift-copy .eyebrow{color:var(--mus);margin:0}
+.gift-copy .lead{color:#d8cfc5}
+.gift-tags{display:flex;gap:8px;flex-wrap:wrap}
+.gift-tags span{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 14px;font-size:13px}
+.gift-img{min-height:320px;position:relative}
+.gift-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
-dialog{border:0;padding:0;border-radius:16px;width:min(1000px,calc(100vw - 24px));max-height:calc(100dvh - 24px);background:#fff;color:var(--ink)}
-dialog::backdrop{background:rgba(30,26,22,.6)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:12px}
+.step .num{border-color:var(--line);color:var(--ter)}
+.step b{font:400 24px/1.2 var(--serif)}
+.step p{margin:0;color:var(--muted);font-size:15px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,90px)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font:600 17px/1.4 var(--sans);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:18px;font:300 26px/1 var(--sans);color:var(--ter);transition:transform .2s}
+.faq details[open] summary:after{transform:rotate(45deg)}
+.faq details p{margin:0 0 22px;color:var(--ink2);max-width:640px}
+
+/* contact */
+.contact{background:var(--cream);text-align:center}
+.contact .lead{max-width:560px;margin:18px auto 0}
+.contact-cards{display:grid;grid-template-columns:repeat(2,minmax(0,340px));gap:18px;justify-content:center;margin-top:40px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;text-align:left;display:flex;flex-direction:column;gap:6px;transition:.2s}
+.ccard:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(47,36,30,.08)}
+.ccard small{font:700 10px/1.2 var(--sans);letter-spacing:.2em;color:var(--ter)}
+.ccard b{font:400 30px/1.1 var(--serif)}
+.ccard span{color:var(--ink2);font-size:14px}
+
+/* footer */
+footer{background:var(--ink);color:#d9cfc4;padding:64px 0 28px;font-size:14px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+.foot .logo{width:180px;margin-bottom:18px}
+.foot p{margin:0;color:#b5a99d;max-width:300px}
+.foot h4{font:700 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin:6px 0 18px}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.foot a:hover{color:#fff}
+.social{display:flex;gap:10px;margin-top:20px}
+.social a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:grid;place-items:center}
+.social svg{width:18px;height:18px}
+.legal{margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#9a8e82;font-size:13px}
+
+/* floating whatsapp */
+.fab{position:fixed;right:18px;bottom:18px;z-index:40;width:58px;height:58px;border-radius:50%;background:#1f7a52;color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.22);transition:transform .2s}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:28px;height:28px}
+
+/* product dialog */
+dialog{border:0;padding:0;border-radius:18px;width:min(1040px,calc(100vw - 24px));max-height:calc(100dvh - 24px);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(30,22,16,.6)}
 .sheet{display:grid;grid-template-columns:1.1fr 1fr}
-.gal{padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--paper)}
-.gal .big{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px}
+.gal{padding:16px;display:flex;flex-direction:column;gap:10px}
+.gal .big{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;background:var(--sand)}
 .thumbs{display:flex;gap:8px;flex-wrap:wrap}
-.thumbs button{border:2px solid transparent;padding:0;border-radius:8px;overflow:hidden;width:68px;height:68px;cursor:pointer;background:none}
-.thumbs button[aria-current="true"]{border-color:var(--coral)}
+.thumbs button{border:2px solid transparent;padding:0;border-radius:8px;overflow:hidden;width:70px;height:70px;cursor:pointer;background:none}
+.thumbs button[aria-current="true"]{border-color:var(--ter)}
 .thumbs img{width:100%;height:100%;object-fit:cover}
-.info{padding:36px 32px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.info h3{font-family:Georgia,serif;font-size:34px;font-weight:500;margin:0;line-height:1.1}
-.info ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:7px;line-height:1.5}
-.info .note{font-size:13px;color:var(--muted);background:var(--paper);border-radius:10px;padding:12px 14px;line-height:1.5}
-.close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.15);font-size:22px;cursor:pointer;z-index:2;color:var(--ink)}
+.info{padding:40px 34px 34px 18px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.info h3{font-size:34px;line-height:1.1}
+.info .price{font-size:20px}
+.info .desc{margin:0;color:var(--ink2)}
+.info .btn{width:100%}
+.acc details{border-top:1px solid var(--line)}
+.acc details:last-child{border-bottom:1px solid var(--line)}
+.acc summary{cursor:pointer;list-style:none;padding:15px 30px 15px 0;font:600 14px/1.3 var(--sans);position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary:after{content:"+";position:absolute;right:2px;top:11px;font:300 22px/1 var(--sans);color:var(--ter)}
+.acc details[open] summary:after{content:"–"}
+.acc ul,.acc p{margin:0 0 16px;color:var(--ink2);font-size:14px}
+.acc ul{padding-left:18px;display:grid;gap:6px}
+.close{position:absolute;top:12px;right:12px;width:42px;height:42px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.15);font-size:24px;line-height:1;cursor:pointer;z-index:2}
 
-@media(max-width:980px){header nav{display:none}.brand{width:160px}.hero{grid-template-columns:1fr}.hero-copy{padding:70px 24px}.hero-art{min-height:480px}.section-head{grid-template-columns:1fr;gap:24px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.story{grid-template-columns:1fr}.story-art{max-width:480px;width:100%;justify-self:center}.steps{grid-template-columns:1fr}footer{grid-template-columns:1fr 1fr}footer p{display:none}.sheet{grid-template-columns:1fr}.info{padding:8px 22px 28px}}
-@media(max-width:600px){.announcement{font-size:9px}.brand{width:130px;height:56px}header{height:72px;padding:0 14px}header .pill{font-size:11px;padding:0 14px;min-height:40px}.hero h1{font-size:52px}.hero-art{min-height:420px}.actions{align-items:flex-start;flex-direction:column}.marquee{justify-content:center}.product-grid{grid-template-columns:1fr}.product-photo{height:400px}.story-art{height:320px;font-size:34px}.order-actions{grid-template-columns:1fr}.section{padding:72px 20px}footer{grid-template-columns:1fr;gap:20px}}
+@media(max-width:1020px){
+  .bar{grid-template-columns:auto 1fr auto}.nav{display:none}.menu-btn{display:grid}
+  .tools .btn{display:none}
+  .mnav{display:none;flex-direction:column;border-top:1px solid var(--line);padding:8px var(--gut) 18px;background:var(--paper)}
+  .mnav.open{display:flex}
+  .mnav a{padding:14px 0;border-bottom:1px solid var(--line);font:600 16px/1 var(--sans)}
+  .hero-grid{grid-template-columns:1fr}.hero-copy{padding:56px var(--gut)}.hero-art{min-height:520px}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(3){border-left:0}.trust-item:nth-child(n+3){border-top:1px solid var(--line)}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .craft-grid,.story-grid,.faq-grid,.gift{grid-template-columns:1fr}
+  .insta-grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .sheet{grid-template-columns:1fr}.info{padding:6px 22px 28px}
+}
+@media(max-width:640px){
+  .announce{font-size:10px;letter-spacing:.08em}.announce .x{display:none}
+  .bar{height:68px}.logo{width:118px}
+  .hero h1{font-size:44px}.hero-art{min-height:420px}.hero-ctas .btn{flex:1}
+  .trust-item{padding:18px 10px;gap:10px}.trust-item svg{width:24px;height:24px}.trust-item b{font-size:13px}.trust-item span{font-size:12px}
+  .cats{grid-template-columns:1fr 1fr;gap:12px}.cats .cat:first-child{grid-column:1/-1;aspect-ratio:16/11}.cat b{font-size:23px}.cat span{left:16px;right:16px;bottom:16px}.cat em{display:none}
+  .grid{grid-template-columns:1fr 1fr;gap:26px 12px}.card-body{flex-direction:column;gap:6px}.card-body h3{font-size:17px}.card-body p{display:none}.card-actions{flex-direction:column}.card-actions .btn{min-height:40px;font-size:12px}.quick{display:none}
+  .stats{grid-template-columns:repeat(3,1fr)}.stat b{font-size:26px}
+  .contact-cards{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .fab{width:52px;height:52px}
+}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Aztec Feather","url":"https://aztecfeather.com/","logo":"https://aztecfeather.com/img/icon-512.png","email":"aztecfeather@gmail.com","sameAs":["https://www.instagram.com/aztecfeather/"],"contactPoint":{"@type":"ContactPoint","telephone":"+971582571491","contactType":"sales","areaServed":["AE","IN"]}}
+</script>
 </head>
 <body>
-<div class="announcement">Handcrafted in India · Delivery across the UAE</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-hand" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 C 24 9, 25 18, 21 25 C 19 28, 17 29.5, 16 30 C 15 29.5, 13 28, 11 25 C 7 18, 8 9, 16 4 Z"/><path d="M16 6v22M11 14l5 3 5-3M10 20l6 3 6-3"/></g></symbol>
+  <symbol id="i-gem" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M16 4 28 16 16 28 4 16Z"/><path d="M16 10 22 16 16 22 10 16Z"/></g></symbol>
+  <symbol id="i-video" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="8" width="19" height="16" rx="3"/><path d="m22 14 7-4v12l-7-4"/></g></symbol>
+  <symbol id="i-truck" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 9h16v13H3zM19 13h5l5 5v4h-10"/><circle cx="9" cy="23" r="2.5" fill="#fbf8f2"/><circle cx="23" cy="23" r="2.5" fill="#fbf8f2"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="announce">Handmade in India <span>✦</span> Delivered across the UAE <span class="x">✦</span><span class="x" style="opacity:1;margin:0">Order easily on WhatsApp</span></div>
 <header>
-  <a class="brand" href="#top" aria-label="Aztec Feather home"><img src="img/logo.svg" alt="Aztec Feather" width="384" height="200"></a>
-  <nav aria-label="Main"><a href="#collections">Bags</a><a href="#story">Our Story</a><a href="#how">How to Order</a><a href="#order">Contact</a></nav>
-  <a class="pill dark" id="hdr-wa" href="#" target="_blank" rel="noopener">Shop on WhatsApp</a>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Aztec Feather home"><img src="img/logo.svg" alt="Aztec Feather" width="384" height="200"></a>
+    <nav class="nav" aria-label="Main"><a href="#shop">Shop</a><a href="#craft">Our Craft</a><a href="#story">Story</a><a href="#gifting">Gifting</a><a href="#faq">FAQ</a></nav>
+    <div class="tools">
+      <a class="icon-btn" href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+      <a class="btn btn-ink js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order on WhatsApp</a>
+      <button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Mobile"><a href="#shop">Shop</a><a href="#craft">Our Craft</a><a href="#story">Story</a><a href="#gifting">Gifting &amp; bulk</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
 </header>
 
 <main id="top">
   <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">BE BOLD · BE EARTHY · BE YOU</p>
-      <h1>Carry a little <em>free spirit.</em></h1>
-      <p>Handcrafted bags that bring Indian craft, natural textures and unapologetic boho energy into everyday life. Hand-beaded, one at a time, and shipped to you from Dubai.</p>
-      <div class="actions"><a class="pill coral" href="#collections">Explore the collection</a><a class="text-link" href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener">Follow our journey ↗</a></div>
-      <div class="hero-facts"><span>Handmade in India</span><span>4,500+ on Instagram</span><span>Delivery across the UAE</span></div>
-    </div>
-    <div class="hero-art">
-      <img src="img/evil-eye-tote-hero.jpg" alt="Hand-beaded evil-eye jute tote by Aztec Feather" width="1050" height="1400">
-      <span class="scribble">made with<br><strong>good vibes</strong></span>
-    </div>
-  </section>
-
-  <section class="marquee" aria-label="Brand values"><span>HANDCRAFTED</span><i>✦</i><span>EARTHY TEXTURES</span><i>✦</i><span>PLAYFUL DETAILS</span><i>✦</i><span>INDIA TO DUBAI</span></section>
-
-  <section class="section collections" id="collections">
-    <div class="section-head">
-      <div><p class="eyebrow">FIND YOUR THING</p><h2>Made to stand out,<br>not blend in.</h2></div>
-      <p>Natural jute, intricate beadwork, tactile fringe and joyful colour. Each Aztec Feather piece is made by hand, so no two are exactly alike. Tap a bag to see more photos.</p>
-    </div>
-    <div class="filters" role="group" aria-label="Filter bags">
-      <button class="chip" id="f-all" data-f="all" aria-pressed="true">ALL BAGS</button>
-      <button class="chip" id="f-tote" data-f="tote" aria-pressed="false">TOTES</button>
-      <button class="chip" id="f-clutch" data-f="clutch" aria-pressed="false">CLUTCHES</button>
-      <button class="chip" id="f-sling" data-f="sling" aria-pressed="false">SLINGS</button>
-    </div>
-    <div class="product-grid" id="grid"></div>
-    <div class="collection-note"><span>More pieces are available</span><p>New designs arrive in small batches. <a id="more-wa" href="#" target="_blank" rel="noopener">Ask us on WhatsApp</a> for colours and what's in stock.</p></div>
-  </section>
-
-  <section class="story section" id="story">
-    <div class="story-art" aria-hidden="true"><span>INDIA</span><div class="thread"></div><span>DUBAI</span></div>
-    <div>
-      <p class="eyebrow">OUR STORY</p>
-      <h2>Crafted with roots.<br>Styled for now.</h2>
-      <p>Aztec Feather began in India with a love for handcrafted objects, tactile fabrics and accessories full of character. We sold at exhibitions and online, and grew a community of more than 4,500 people on Instagram.</p>
-      <p>Today we bring that same joyful, bohemian spirit to Dubai, working with the same artisan suppliers, one distinctive piece at a time.</p>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Handmade boho bags · Dubai</p>
+        <h1>Carry a little <em>free spirit.</em></h1>
+        <p class="lead">Hand-beaded totes, fringe shoulder bags and coin clutches, made one at a time by artisans in India and delivered to your door across the UAE.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-ter" href="#shop">Shop the collection</a>
+          <a class="btn btn-line js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Chat with us</a>
+        </div>
+        <div class="hero-note"><div class="dots"><i style="background-image:url(img/black-cream-sequin-clutch-3.jpg)"></i><i style="background-image:url(img/santorini-tote-3.jpg)"></i><i style="background-image:url(img/taupe-fringe-clutch-2.jpg)"></i></div>Join 4,500+ boho lovers on Instagram</div>
+      </div>
+      <div class="hero-art">
+        <img src="img/evil-eye-tote-hero.jpg" alt="Hand-beaded evil-eye jute tote by Aztec Feather" width="1050" height="1400" fetchpriority="high">
+        <div class="hero-tag"><small>Bestseller</small><b>Beaded Evil-Eye Tote</b><span>Hand-beaded on natural jute</span></div>
+      </div>
     </div>
   </section>
 
-  <section class="section how" id="how">
-    <div class="section-head"><div><p class="eyebrow">HOW TO ORDER</p><h2>Three easy steps.</h2></div><p>We keep ordering personal. Message us, and we can send a video of your exact bag before you buy.</p></div>
-    <div class="steps">
-      <div class="step"><small>STEP ONE</small><strong>Choose your bag</strong><p>Tap "Order on WhatsApp" under any bag. Your message opens with the bag name and price filled in.</p></div>
-      <div class="step"><small>STEP TWO</small><strong>Confirm with us</strong><p>Send your name and delivery address. We confirm availability and the delivery charge.</p></div>
-      <div class="step"><small>STEP THREE</small><strong>Receive it</strong><p>We arrange payment with you on WhatsApp and deliver your bag anywhere in the UAE.</p></div>
+  <section class="trust" aria-label="Why shop with us">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><svg><use href="#i-hand"/></svg><div><b>Handmade by artisans</b><span>Beaded and stitched by hand in India</span></div></div>
+      <div class="trust-item"><svg><use href="#i-gem"/></svg><div><b>One of a kind</b><span>Small batches, no two exactly alike</span></div></div>
+      <div class="trust-item"><svg><use href="#i-video"/></svg><div><b>See it before you buy</b><span>Ask for a video of your exact bag</span></div></div>
+      <div class="trust-item"><svg><use href="#i-truck"/></svg><div><b>UAE-wide delivery</b><span>Sent from Dubai to your door</span></div></div>
     </div>
   </section>
 
-  <section class="order section" id="order">
-    <p class="eyebrow">SHOP AZTEC FEATHER</p>
-    <h2>See something that feels like you?</h2>
-    <p>Message us for the latest collection, prices and availability in Dubai or India.</p>
-    <div class="order-actions">
-      <a class="country-card" id="wa-dubai" href="#" target="_blank" rel="noopener"><small>SHOP IN</small><strong>Dubai</strong><span>+971 58 257 1491 →</span></a>
-      <a class="country-card" id="wa-india" href="#" target="_blank" rel="noopener"><small>SHOP IN</small><strong>India</strong><span>+91 81306 26722 →</span></a>
+  <section class="sec" aria-labelledby="cat-h">
+    <div class="wrap">
+      <div class="head"><div><p class="eyebrow">Shop by style</p><h2 id="cat-h">Find your kind of boho.</h2></div><p class="lead">From roomy beach totes to evening clutches covered in coins and mirrors.</p></div>
+      <div class="cats">
+        <button class="cat" data-cat="tote"><img src="img/evil-eye-tote-main.jpg" alt="" loading="lazy"><span><b>Totes</b><em>Shop →</em></span></button>
+        <button class="cat" data-cat="clutch"><img src="img/black-cream-sequin-clutch-main.jpg" alt="" loading="lazy"><span><b>Clutches</b><em>Shop →</em></span></button>
+        <button class="cat" data-cat="sling"><img src="img/cream-fringe-sling-main.jpg" alt="" loading="lazy"><span><b>Shoulder bags</b><em>Shop →</em></span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="shop" style="padding-top:0" aria-labelledby="shop-h">
+    <div class="wrap">
+      <div class="head"><div><p class="eyebrow">The collection</p><h2 id="shop-h">Made to stand out.</h2></div>
+        <div class="filters" role="group" aria-label="Filter bags">
+          <button class="chip" data-f="all" aria-pressed="true">All bags</button>
+          <button class="chip" data-f="tote" aria-pressed="false">Totes</button>
+          <button class="chip" data-f="clutch" aria-pressed="false">Clutches</button>
+          <button class="chip" data-f="sling" aria-pressed="false">Shoulder bags</button>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="more-note"><div><b>More designs in stock</b><p>New pieces arrive in small batches. Ask us for colours, new arrivals and what's available today.</p></div><a class="btn btn-ink js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>See what's new</a></div>
+    </div>
+  </section>
+
+  <section class="sec craft" id="craft" aria-labelledby="craft-h">
+    <div class="wrap craft-grid">
+      <div class="craft-img"><img src="img/black-cream-sequin-clutch-4.jpg" alt="Close-up of hand-stitched mirrors, coins and beads on an Aztec Feather clutch" loading="lazy"></div>
+      <div>
+        <p class="eyebrow">Our craft</p>
+        <h2 id="craft-h">Hours of handwork in every bag.</h2>
+        <p class="lead">Each piece is beaded, stitched and finished by hand. That is why the colours glow, the textures feel alive, and every bag is slightly different from the next.</p>
+        <ul class="points">
+          <li><span class="num">1</span><div><b>Hand-beaded detail</b><span>Seed beads, mirrors, coins and sequins, sewn on one by one.</span></div></li>
+          <li><span class="num">2</span><div><b>Natural materials</b><span>Jute and cotton bases with fringe and tassel finishes.</span></div></li>
+          <li><span class="num">3</span><div><b>Small batches</b><span>We make a few of each design, so you won't see your bag everywhere.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="story" aria-labelledby="story-h">
+    <div class="wrap story-grid">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2 id="story-h">Crafted with roots. Styled for now.</h2>
+        <p class="lead" style="margin-top:20px">Aztec Feather began in India with a love for handcrafted objects and accessories full of character. We sold at exhibitions and online and grew a warm community on Instagram.</p>
+        <p class="lead" style="margin-top:14px">Today we bring that same bohemian spirit to Dubai, working with the same artisan suppliers, one distinctive piece at a time.</p>
+        <div class="stats">
+          <div class="stat"><b>4,500+</b><span>Instagram community</span></div>
+          <div class="stat"><b>100%</b><span>Handmade pieces</span></div>
+          <div class="stat"><b>2</b><span>Countries: India &amp; UAE</span></div>
+        </div>
+      </div>
+      <div class="route" aria-hidden="true">
+        <div class="route-row"><span class="pin"><svg><use href="#i-pin"/></svg></span><b>India</b><span>Designed with artisans and made by hand</span></div>
+        <div class="route-line"></div>
+        <div class="route-row"><span class="pin"><svg><use href="#i-pin"/></svg></span><b>Dubai</b><span>Checked, packed and sent to you</span></div>
+        <div class="route-line"></div>
+        <div class="route-row"><span class="pin"><svg><use href="#i-hand"/></svg></span><b>You</b><span>Worn to the beach, brunch and weddings</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec insta" aria-labelledby="ig-h">
+    <div class="wrap">
+      <div class="head"><div><p class="eyebrow">@aztecfeather</p><h2 id="ig-h">Join the tribe on Instagram.</h2></div><a class="btn btn-line" href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Follow us</a></div>
+      <div class="insta-grid" id="insta"></div>
+      <p style="margin:22px 0 0;color:var(--muted);font-size:14px">See real customer photos and reviews in our Instagram highlights.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="gifting" aria-labelledby="gift-h">
+    <div class="wrap">
+      <div class="gift">
+        <div class="gift-copy">
+          <p class="eyebrow">Gifting &amp; bulk orders</p>
+          <h2 id="gift-h">Gifts they will actually keep.</h2>
+          <p class="lead">Clutches and totes for bridesmaids, mehndi and wedding favours, Eid and Diwali gifting, corporate events and boutiques. Tell us the quantity and budget and we'll put together options.</p>
+          <div class="gift-tags"><span>Weddings</span><span>Eid &amp; Diwali</span><span>Corporate gifts</span><span>Boutiques &amp; resale</span></div>
+          <div><a class="btn btn-ter" id="gift-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask for a bulk quote</a></div>
+        </div>
+        <div class="gift-img"><img src="img/black-coin-clutch-2.jpg" alt="Black hand-beaded coin clutch" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="head"><div><p class="eyebrow">How to order</p><h2 id="how-h">Three easy steps.</h2></div><p class="lead">Ordering is personal and simple. Message us and we'll take care of the rest.</p></div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><b>Choose your bag</b><p>Tap "Order on WhatsApp" under any bag. Your message opens with the bag name and price already filled in.</p></div>
+        <div class="step"><span class="num">2</span><b>Confirm with us</b><p>Send your name and delivery address. We confirm availability and the delivery charge, and can send a video of your bag.</p></div>
+        <div class="step"><span class="num">3</span><b>Receive it</b><p>We arrange payment with you on WhatsApp and deliver your bag anywhere in the UAE.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" style="padding-top:0" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <div><p class="eyebrow">Help</p><h2 id="faq-h">Questions, answered.</h2><p class="lead" style="margin-top:18px">Can't find what you need? We usually reply on WhatsApp within a few hours.</p><div style="margin-top:26px"><a class="btn btn-ink js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask a question</a></div></div>
+      <div class="faq">
+        <details><summary>Where do you deliver?</summary><p>Anywhere in the UAE, sent from Dubai. We confirm the delivery charge and timing on WhatsApp before you pay. For orders in India, message our India number below.</p></details>
+        <details><summary>How do I pay?</summary><p>Once we confirm your order on WhatsApp, we share the payment options with you. Online card and Apple Pay checkout is coming soon.</p></details>
+        <details><summary>Will my bag look exactly like the photos?</summary><p>Every bag is made by hand, so beadwork and colours vary slightly from piece to piece. That is part of its charm. Ask us and we'll send a photo or video of the exact bag you'll receive.</p></details>
+        <details><summary>What if there's a problem with my order?</summary><p>If your bag arrives damaged or isn't what you ordered, message us on WhatsApp within 48 hours of delivery with a photo and we'll make it right.</p></details>
+        <details><summary>How do I care for my bag?</summary><p>Spot clean gently with a dry or slightly damp cloth. Do not wash or soak. Store flat, away from direct sun, and stuff totes with paper to keep their shape.</p></details>
+        <details><summary>Do you take bulk or gifting orders?</summary><p>Yes. We supply weddings, corporate events, festive gifting and boutiques. Message us with the quantity and date and we'll send options and a quote.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="eyebrow">Shop Aztec Feather</p>
+      <h2 id="contact-h">See something that feels like you?</h2>
+      <p class="lead">Message us for the latest pieces, prices and availability in Dubai or India.</p>
+      <div class="contact-cards">
+        <a class="ccard" id="wa-dubai" href="#" target="_blank" rel="noopener"><small>SHOP IN THE UAE</small><b>Dubai</b><span>WhatsApp +971 58 257 1491 →</span></a>
+        <a class="ccard" id="wa-india" href="#" target="_blank" rel="noopener"><small>SHOP IN INDIA</small><b>India</b><span>WhatsApp +91 81306 26722 →</span></a>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="logo-wrap"><img src="img/logo-white.svg" alt="Aztec Feather" width="384" height="200"></div>
-  <div><strong>Aztec Feather</strong><span>aztecfeather@gmail.com</span><a href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener">@aztecfeather</a></div>
-  <p>Handcrafted bags &amp; accessories<br>India · Dubai</p>
+  <div class="wrap">
+    <div class="foot">
+      <div><img class="logo" src="img/logo-white.svg" alt="Aztec Feather" width="384" height="200"><p>Handmade boho bags and accessories, crafted by artisans in India and delivered across the UAE.</p>
+        <div class="social"><a href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a><a class="js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a></div></div>
+      <div><h4>Shop</h4><ul><li><a href="#shop" data-goto="tote">Totes</a></li><li><a href="#shop" data-goto="clutch">Clutches</a></li><li><a href="#shop" data-goto="sling">Shoulder bags</a></li><li><a href="#gifting">Gifting &amp; bulk</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#faq">Delivery</a></li><li><a href="#faq">Payment</a></li><li><a href="#faq">Bag care</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:aztecfeather@gmail.com">aztecfeather@gmail.com</a></li><li><a class="js-wa" href="#" target="_blank" rel="noopener">+971 58 257 1491</a></li><li><a href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener">@aztecfeather</a></li><li>Dubai, UAE · India</li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Aztec Feather. All rights reserved.</span><span>Handmade in India ✦ Loved in Dubai</span></div>
+  </div>
 </footer>
+
+<a class="fab js-wa" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#i-wa"/></svg></a>
 
 <dialog id="sheet" aria-labelledby="s-name">
   <button class="close" id="s-close" aria-label="Close">×</button>
@@ -216,10 +485,14 @@ dialog::backdrop{background:rgba(30,26,22,.6)}
       <p class="eyebrow" id="s-type" style="margin:0"></p>
       <h3 id="s-name"></h3>
       <div class="price" id="s-price"></div>
-      <p id="s-desc" style="margin:0;line-height:1.6;color:#5e5a51"></p>
-      <ul id="s-points"></ul>
-      <div class="note">Handmade, so beadwork and colours vary slightly from piece to piece. Delivery across the UAE; we confirm the delivery charge and payment on WhatsApp.</div>
-      <div><a class="pill coral" id="s-order" href="#" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+      <p class="desc" id="s-desc"></p>
+      <a class="btn btn-wa" id="s-order" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order on WhatsApp</a>
+      <a class="btn btn-line" id="s-video" href="#" target="_blank" rel="noopener">Ask for a video of this bag</a>
+      <div class="acc">
+        <details open><summary>Details</summary><ul id="s-points"></ul></details>
+        <details><summary>Delivery &amp; payment</summary><p>Delivered anywhere in the UAE from Dubai. We confirm the delivery charge, timing and payment options on WhatsApp before you pay.</p></details>
+        <details><summary>Handmade note &amp; care</summary><p>Made by hand, so beadwork and colours vary slightly from piece to piece. Spot clean gently, do not wash, and store flat.</p></details>
+      </div>
     </div>
   </div>
 </dialog>
@@ -229,7 +502,7 @@ const WA_DUBAI="971582571491", WA_INDIA="918130626722";
 const wa=(n,t)=>"https://wa.me/"+n+"?text="+encodeURIComponent(t);
 const PRODUCTS=[
  {id:"evil-eye-tote",type:"tote",typeName:"Statement Tote",badge:"BESTSELLER",name:"Beaded Evil-Eye Jute Tote",price:149,
-  imgs:["evil-eye-tote-main","evil-eye-tote-hero","evil-eye-tote-3","evil-eye-tote-4"],
+  imgs:["evil-eye-tote-main","evil-eye-tote-3","evil-eye-tote-hero","evil-eye-tote-4"],
   blurb:"A rainbow evil eye, hand-beaded onto natural jute.",
   desc:"A big, joyful tote with a hand-beaded evil eye in rainbow colours. Frayed jute edges give it a relaxed beach look.",
   points:["Hand-beaded on natural jute","Roomy open tote with sturdy jute handles","Fits phone, wallet, sunglasses and a towel","Great with kaftans, abayas and summer dresses"]},
@@ -239,12 +512,12 @@ const PRODUCTS=[
   desc:"A Greek-island scene worked in fine seed beads, with woven blue-and-white side panels and striped handles.",
   points:["Seed-bead Santorini scene","Woven blue and white side panels","Striped navy and white handles","Made for the beach, pool and travel"]},
  {id:"cream-fringe-sling",type:"sling",typeName:"Fringe Shoulder Bag",badge:"STATEMENT",name:"Ivory Nomad Fringe Bag",price:139,
-  imgs:["cream-fringe-sling-main","cream-fringe-sling-2","cream-fringe-sling-3","cream-fringe-sling-4"],
+  imgs:["cream-fringe-sling-main","cream-fringe-sling-3","cream-fringe-sling-2","cream-fringe-sling-4"],
   blurb:"Cotton fringe, metal coins and mirror work.",
   desc:"Dramatic ivory cotton fringe around a beaded centre panel with coins and mirrors. Wear it across the body and keep your hands free.",
   points:["Cotton fringe with metal coins and mirrors","Flap closure","Adjustable crossbody strap","Fits phone, keys, cards and lipstick"]},
  {id:"black-cream-sequin-clutch",type:"clutch",typeName:"Embellished Clutch",badge:"",name:"Mirrorwork Boho Clutch",price:119,
-  imgs:["black-cream-sequin-clutch-main","black-cream-sequin-clutch-2","black-cream-sequin-clutch-3","black-cream-sequin-clutch-4"],
+  imgs:["black-cream-sequin-clutch-main","black-cream-sequin-clutch-3","black-cream-sequin-clutch-2","black-cream-sequin-clutch-4"],
   blurb:"Copper sequins, mirrors and a turquoise centre stone.",
   desc:"Our most detailed clutch: copper sequins, mirror work and pearls around a turquoise centre stone, on black and cream.",
   points:["Sequins, mirrors, pearls and a turquoise stone","Envelope flap","Sling strap for crossbody wear","For weddings, parties and nights out"]},
@@ -261,37 +534,49 @@ const PRODUCTS=[
 ];
 const src=n=>"img/"+n+".jpg";
 const orderLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! I'd like to order the ${p.name} (AED ${p.price}). Is it available?`);
+const videoLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! Could you send me a video of the ${p.name}?`);
 const general="Hi Aztec Feather! I'd like to see your bag collection.";
-for(const id of ["hdr-wa","more-wa","wa-dubai"]) document.getElementById(id).href=wa(WA_DUBAI,general);
+document.querySelectorAll(".js-wa").forEach(a=>a.href=wa(WA_DUBAI,general));
+document.getElementById("wa-dubai").href=wa(WA_DUBAI,general);
 document.getElementById("wa-india").href=wa(WA_INDIA,general);
+document.getElementById("gift-wa").href=wa(WA_DUBAI,"Hi Aztec Feather! I'm interested in a bulk / gifting order. Quantity: , Occasion: , Date needed: ");
+document.getElementById("yr").textContent=new Date().getFullYear();
 
-const grid=document.getElementById("grid");
 function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+const grid=document.getElementById("grid");
 function render(f){
   grid.innerHTML=PRODUCTS.filter(p=>f==="all"||p.type===f).map(p=>`
-  <article class="product-card">
-    <button class="product-photo" data-open="${p.id}" aria-label="See photos of ${esc(p.name)}">
+  <article class="card">
+    <button class="card-media" data-open="${p.id}" aria-label="View ${esc(p.name)}">
       <img src="${src(p.imgs[0])}" alt="${esc(p.name)}" loading="lazy">
+      <img class="alt" src="${src(p.imgs[1])}" alt="" loading="lazy">
       ${p.badge?`<span class="badge">${p.badge}</span>`:""}
-      <span class="photo-count">${p.imgs.length} photos</span>
+      <span class="quick">Quick view · ${p.imgs.length} photos</span>
     </button>
-    <div class="product-info">
-      <small>${p.typeName}</small>
-      <h3>${esc(p.name)}</h3>
-      <p>${esc(p.blurb)}</p>
-      <div class="price">AED ${p.price}</div>
-      <div class="card-actions">
-        <a class="pill coral" href="${orderLink(p)}" target="_blank" rel="noopener">Order on WhatsApp</a>
-        <button class="link-btn" data-open="${p.id}">More photos →</button>
-      </div>
+    <div class="card-body"><div><small>${p.typeName}</small><h3>${esc(p.name)}</h3><p>${esc(p.blurb)}</p></div><div class="price">AED ${p.price}</div></div>
+    <div class="card-actions">
+      <a class="btn btn-wa" href="${orderLink(p)}" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order</a>
+      <button class="btn btn-line" data-open="${p.id}">View details</button>
     </div>
   </article>`).join("");
 }
+function setFilter(f){
+  document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.f===f)));
+  render(f);
+}
 render("all");
-document.querySelectorAll(".chip").forEach(c=>c.addEventListener("click",()=>{
-  document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",String(x===c)));
-  render(c.dataset.f);
+document.querySelectorAll(".chip").forEach(c=>c.addEventListener("click",()=>setFilter(c.dataset.f)));
+document.querySelectorAll("[data-cat],[data-goto]").forEach(el=>el.addEventListener("click",e=>{
+  e.preventDefault(); setFilter(el.dataset.cat||el.dataset.goto);
+  document.getElementById("shop").scrollIntoView({behavior:"smooth"});
 }));
+
+const ig=["evil-eye-tote-3","black-cream-sequin-clutch-3","santorini-tote-3","taupe-fringe-clutch-2","cream-fringe-sling-3","black-coin-clutch-3"];
+document.getElementById("insta").innerHTML=ig.map(n=>`<a href="https://www.instagram.com/aztecfeather/" target="_blank" rel="noopener" aria-label="Aztec Feather on Instagram"><img src="${src(n)}" alt="" loading="lazy"></a>`).join("");
+
+const menu=document.getElementById("menu"), mnav=document.getElementById("mnav");
+menu.addEventListener("click",()=>{const o=mnav.classList.toggle("open");menu.setAttribute("aria-expanded",String(o))});
+mnav.addEventListener("click",e=>{if(e.target.closest("a")){mnav.classList.remove("open");menu.setAttribute("aria-expanded","false")}});
 
 const dlg=document.getElementById("sheet");
 function show(p,i){
@@ -300,12 +585,13 @@ function show(p,i){
 }
 function openP(id){
   const p=PRODUCTS.find(x=>x.id===id); if(!p) return;
-  document.getElementById("s-type").textContent=p.typeName.toUpperCase();
+  document.getElementById("s-type").textContent=p.typeName;
   document.getElementById("s-name").textContent=p.name;
   document.getElementById("s-price").textContent="AED "+p.price;
   document.getElementById("s-desc").textContent=p.desc;
   document.getElementById("s-points").innerHTML=p.points.map(x=>`<li>${esc(x)}</li>`).join("");
   document.getElementById("s-order").href=orderLink(p);
+  document.getElementById("s-video").href=videoLink(p);
   const th=document.getElementById("s-thumbs"); th.innerHTML="";
   p.imgs.forEach((n,i)=>{const b=document.createElement("button");b.setAttribute("aria-label","Photo "+(i+1));b.innerHTML=`<img src="${src(n)}" alt="">`;b.onclick=()=>show(p,i);th.appendChild(b)});
   show(p,0); dlg.showModal();
@@ -313,6 +599,16 @@ function openP(id){
 grid.addEventListener("click",e=>{const b=e.target.closest("[data-open]"); if(b) openP(b.dataset.open)});
 document.getElementById("s-close").onclick=()=>dlg.close();
 dlg.addEventListener("click",e=>{if(e.target===dlg) dlg.close()});
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Beaded Evil-Eye Jute Tote","image":"https://aztecfeather.com/img/evil-eye-tote-main.jpg","brand":{"@type":"Brand","name":"Aztec Feather"},"offers":{"@type":"Offer","price":"149","priceCurrency":"AED","url":"https://aztecfeather.com/#shop"}}},
+{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Santorini Beaded Tote","image":"https://aztecfeather.com/img/santorini-tote-2.jpg","brand":{"@type":"Brand","name":"Aztec Feather"},"offers":{"@type":"Offer","price":"149","priceCurrency":"AED","url":"https://aztecfeather.com/#shop"}}},
+{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Ivory Nomad Fringe Bag","image":"https://aztecfeather.com/img/cream-fringe-sling-main.jpg","brand":{"@type":"Brand","name":"Aztec Feather"},"offers":{"@type":"Offer","price":"139","priceCurrency":"AED","url":"https://aztecfeather.com/#shop"}}},
+{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Mirrorwork Boho Clutch","image":"https://aztecfeather.com/img/black-cream-sequin-clutch-main.jpg","brand":{"@type":"Brand","name":"Aztec Feather"},"offers":{"@type":"Offer","price":"119","priceCurrency":"AED","url":"https://aztecfeather.com/#shop"}}},
+{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Midnight Coinwork Clutch","image":"https://aztecfeather.com/img/black-coin-clutch-main.jpg","brand":{"@type":"Brand","name":"Aztec Feather"},"offers":{"@type":"Offer","price":"119","priceCurrency":"AED","url":"https://aztecfeather.com/#shop"}}},
+{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Taupe Sunburst Clutch","image":"https://aztecfeather.com/img/taupe-fringe-clutch-1.jpg","brand":{"@type":"Brand","name":"Aztec Feather"},"offers":{"@type":"Offer","price":"119","priceCurrency":"AED","url":"https://aztecfeather.com/#shop"}}}
+]}
 </script>
 </body>
 </html>
