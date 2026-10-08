@@ -130,6 +130,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(251,248,242,.94);backdro
 .price{font:600 16px/1.2 var(--sans);white-space:nowrap}
 .card-actions{display:flex;gap:10px;margin-top:auto}
 .card-actions .btn{flex:1;min-height:44px;font-size:13px;padding:0 14px}
+.card-actions .btn-wa{flex:0 0 44px;padding:0}
 .more-note{margin-top:44px;padding:26px 28px;border:1px dashed var(--mus);border-radius:var(--r);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:#fff}
 .more-note b{font:400 22px/1.3 var(--serif)}
 .more-note p{margin:4px 0 0;color:var(--muted);font-size:14px}
@@ -247,6 +248,11 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
 .acc details[open] summary:after{content:"–"}
 .acc ul,.acc p{margin:0 0 16px;color:var(--ink2);font-size:14px}
 .acc ul{padding-left:18px;display:grid;gap:6px}
+.total{margin:0;font-size:14px;color:var(--muted)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pair .btn{font-size:13px;padding:0 12px}
+.secure{margin:-4px 0 0;font-size:12px;color:var(--muted);text-align:center}
+.paid{background:#eef5f1;border:1px solid #cfe3d8;border-radius:12px;padding:16px;font-size:14px;color:var(--ink2);display:grid;gap:12px}
+.paid[hidden]{display:none}
 .close{position:absolute;top:12px;right:12px;width:42px;height:42px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.15);font-size:24px;line-height:1;cursor:pointer;z-index:2}
 
 @media(max-width:1020px){
@@ -270,7 +276,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
   .hero h1{font-size:44px}.hero-art{min-height:420px}.hero-ctas .btn{flex:1}
   .trust-item{padding:18px 10px;gap:10px}.trust-item svg{width:24px;height:24px}.trust-item b{font-size:13px}.trust-item span{font-size:12px}
   .cats{grid-template-columns:1fr 1fr;gap:12px}.cats .cat:first-child{grid-column:1/-1;aspect-ratio:16/11}.cat b{font-size:23px}.cat span{left:16px;right:16px;bottom:16px}.cat em{display:none}
-  .grid{grid-template-columns:1fr 1fr;gap:26px 12px}.card-body{flex-direction:column;gap:6px}.card-body h3{font-size:17px}.card-body p{display:none}.card-actions{flex-direction:column}.card-actions .btn{min-height:40px;font-size:12px}.quick{display:none}
+  .grid{grid-template-columns:1fr 1fr;gap:26px 12px}.card-body{flex-direction:column;gap:6px}.card-body h3{font-size:17px}.card-body p{display:none}.card-actions .btn{min-height:40px;font-size:12px}.card-actions .btn-wa{flex:0 0 40px}.quick{display:none}
   .stats{grid-template-columns:repeat(3,1fr)}.stat b{font-size:26px}
   .contact-cards{grid-template-columns:1fr}
   .foot{grid-template-columns:1fr}
@@ -290,10 +296,11 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
   <symbol id="i-video" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="8" width="19" height="16" rx="3"/><path d="m22 14 7-4v12l-7-4"/></g></symbol>
   <symbol id="i-truck" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 9h16v13H3zM19 13h5l5 5v4h-10"/><circle cx="9" cy="23" r="2.5" fill="#fbf8f2"/><circle cx="23" cy="23" r="2.5" fill="#fbf8f2"/></g></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h3"/></g></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
 </svg>
 
-<div class="announce">Handmade in India <span>✦</span> Delivered across the UAE <span class="x">✦</span><span class="x" style="opacity:1;margin:0">Order easily on WhatsApp</span></div>
+<div class="announce">Handmade in India <span>✦</span> Delivered across the UAE <span class="x">✦</span><span class="x" style="opacity:1;margin:0">Pay by card or Apple Pay</span></div>
 <header>
   <div class="wrap bar">
     <a class="logo" href="#top" aria-label="Aztec Feather home"><img src="img/logo.svg" alt="Aztec Feather" width="384" height="200"></a>
@@ -332,7 +339,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
       <div class="trust-item"><svg><use href="#i-hand"/></svg><div><b>Handmade by artisans</b><span>Beaded and stitched by hand in India</span></div></div>
       <div class="trust-item"><svg><use href="#i-gem"/></svg><div><b>One of a kind</b><span>Small batches, no two exactly alike</span></div></div>
       <div class="trust-item"><svg><use href="#i-video"/></svg><div><b>See it before you buy</b><span>Ask for a video of your exact bag</span></div></div>
-      <div class="trust-item"><svg><use href="#i-truck"/></svg><div><b>UAE-wide delivery</b><span>Sent from Dubai to your door</span></div></div>
+      <div class="trust-item"><svg><use href="#i-truck"/></svg><div><b>UAE delivery AED 15</b><span>Sent from Dubai to your door</span></div></div>
     </div>
   </section>
 
@@ -428,9 +435,9 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
     <div class="wrap">
       <div class="head"><div><p class="eyebrow">How to order</p><h2 id="how-h">Three easy steps.</h2></div><p class="lead">Ordering is personal and simple. Message us and we'll take care of the rest.</p></div>
       <div class="steps">
-        <div class="step"><span class="num">1</span><b>Choose your bag</b><p>Tap "Order on WhatsApp" under any bag. Your message opens with the bag name and price already filled in.</p></div>
-        <div class="step"><span class="num">2</span><b>Confirm with us</b><p>Send your name and delivery address. We confirm availability and the delivery charge, and can send a video of your bag.</p></div>
-        <div class="step"><span class="num">3</span><b>Receive it</b><p>We arrange payment with you on WhatsApp and deliver your bag anywhere in the UAE.</p></div>
+        <div class="step"><span class="num">1</span><b>Choose your bag</b><p>Tap "Buy now" to pay securely by card, Apple Pay or Google Pay. Prefer to chat first? Tap the WhatsApp button instead.</p></div>
+        <div class="step"><span class="num">2</span><b>Send your address</b><p>After paying, send us your name and delivery address on WhatsApp. The message is filled in for you.</p></div>
+        <div class="step"><span class="num">3</span><b>Receive it</b><p>We pack your bag in Dubai and deliver it anywhere in the UAE. Delivery is a flat AED 15.</p></div>
       </div>
     </div>
   </section>
@@ -439,8 +446,8 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
     <div class="wrap faq-grid">
       <div><p class="eyebrow">Help</p><h2 id="faq-h">Questions, answered.</h2><p class="lead" style="margin-top:18px">Can't find what you need? We usually reply on WhatsApp within a few hours.</p><div style="margin-top:26px"><a class="btn btn-ink js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask a question</a></div></div>
       <div class="faq">
-        <details><summary>Where do you deliver?</summary><p>Anywhere in the UAE, sent from Dubai. We confirm the delivery charge and timing on WhatsApp before you pay. For orders in India, message our India number below.</p></details>
-        <details><summary>How do I pay?</summary><p>Once we confirm your order on WhatsApp, we share the payment options with you. Online card and Apple Pay checkout is coming soon.</p></details>
+        <details><summary>Where do you deliver?</summary><p>Anywhere in the UAE, sent from Dubai, for a flat AED 15. We confirm the delivery time on WhatsApp once your order is in. For orders in India, message our India number below.</p></details>
+        <details><summary>How do I pay?</summary><p>Tap "Buy now" on any bag to pay securely online by card, Apple Pay or Google Pay through Ziina, a payment provider licensed by the Central Bank of the UAE. The price includes AED 15 delivery. You can also order on WhatsApp and pay with a link we send you.</p></details>
         <details><summary>Will my bag look exactly like the photos?</summary><p>Every bag is made by hand, so beadwork and colours vary slightly from piece to piece. That is part of its charm. Ask us and we'll send a photo or video of the exact bag you'll receive.</p></details>
         <details><summary>What if there's a problem with my order?</summary><p>If your bag arrives damaged or isn't what you ordered, message us on WhatsApp within 48 hours of delivery with a photo and we'll make it right.</p></details>
         <details><summary>How do I care for my bag?</summary><p>Spot clean gently with a dry or slightly damp cloth. Do not wash or soak. Store flat, away from direct sun, and stuff totes with paper to keep their shape.</p></details>
@@ -486,11 +493,14 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
       <h3 id="s-name"></h3>
       <div class="price" id="s-price"></div>
       <p class="desc" id="s-desc"></p>
-      <a class="btn btn-wa" id="s-order" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order on WhatsApp</a>
-      <a class="btn btn-line" id="s-video" href="#" target="_blank" rel="noopener">Ask for a video of this bag</a>
+      <p class="total" id="s-total"></p>
+      <a class="btn btn-ter" id="s-pay" href="#" target="_blank" rel="noopener"><svg><use href="#i-card"/></svg><span id="s-paylabel">Buy now</span></a>
+      <div class="paid" id="s-paid" hidden><b>Payment page opened in a new tab.</b> Once you've paid, send us your delivery address so we can ship your bag. <a class="btn btn-wa" id="s-addr" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Send my address</a></div>
+      <div class="pair"><a class="btn btn-line" id="s-order" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order on WhatsApp</a><a class="btn btn-line" id="s-video" href="#" target="_blank" rel="noopener">Ask for a video</a></div>
+      <p class="secure">Secure checkout by Ziina · Card, Apple Pay, Google Pay</p>
       <div class="acc">
         <details open><summary>Details</summary><ul id="s-points"></ul></details>
-        <details><summary>Delivery &amp; payment</summary><p>Delivered anywhere in the UAE from Dubai. We confirm the delivery charge, timing and payment options on WhatsApp before you pay.</p></details>
+        <details><summary>Delivery &amp; payment</summary><p>Delivered anywhere in the UAE from Dubai for a flat AED 15, included in the Buy now total. Pay securely by card, Apple Pay or Google Pay. After paying, send us your address on WhatsApp.</p></details>
         <details><summary>Handmade note &amp; care</summary><p>Made by hand, so beadwork and colours vary slightly from piece to piece. Spot clean gently, do not wash, and store flat.</p></details>
       </div>
     </div>
@@ -499,6 +509,8 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
 
 <script>
 const WA_DUBAI="971582571491", WA_INDIA="918130626722";
+const ZIINA="https://pay.ziina.com/aztecfeather57", DELIVERY=15;
+const payLink=p=>ZIINA+"?amount="+(p.price+DELIVERY);
 const wa=(n,t)=>"https://wa.me/"+n+"?text="+encodeURIComponent(t);
 const PRODUCTS=[
  {id:"evil-eye-tote",type:"tote",typeName:"Statement Tote",badge:"BESTSELLER",name:"Beaded Evil-Eye Jute Tote",price:149,
@@ -534,6 +546,7 @@ const PRODUCTS=[
 ];
 const src=n=>"img/"+n+".jpg";
 const orderLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! I'd like to order the ${p.name} (AED ${p.price}). Is it available?`);
+const addrLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! I've just paid AED ${p.price+DELIVERY} for the ${p.name}.\nName: \nPhone: \nDelivery address: `);
 const videoLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! Could you send me a video of the ${p.name}?`);
 const general="Hi Aztec Feather! I'd like to see your bag collection.";
 document.querySelectorAll(".js-wa").forEach(a=>a.href=wa(WA_DUBAI,general));
@@ -555,8 +568,8 @@ function render(f){
     </button>
     <div class="card-body"><div><small>${p.typeName}</small><h3>${esc(p.name)}</h3><p>${esc(p.blurb)}</p></div><div class="price">AED ${p.price}</div></div>
     <div class="card-actions">
-      <a class="btn btn-wa" href="${orderLink(p)}" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order</a>
-      <button class="btn btn-line" data-open="${p.id}">View details</button>
+      <button class="btn btn-ter" data-open="${p.id}">Buy now</button>
+      <a class="btn btn-wa" href="${orderLink(p)}" target="_blank" rel="noopener" aria-label="Order ${esc(p.name)} on WhatsApp" title="Order on WhatsApp"><svg><use href="#i-wa"/></svg></a>
     </div>
   </article>`).join("");
 }
@@ -591,12 +604,18 @@ function openP(id){
   document.getElementById("s-desc").textContent=p.desc;
   document.getElementById("s-points").innerHTML=p.points.map(x=>`<li>${esc(x)}</li>`).join("");
   document.getElementById("s-order").href=orderLink(p);
+  document.getElementById("s-total").textContent=`AED ${p.price} + AED ${DELIVERY} UAE delivery = AED ${p.price+DELIVERY} total`;
+  document.getElementById("s-pay").href=payLink(p);
+  document.getElementById("s-paylabel").textContent=`Buy now · AED ${p.price+DELIVERY}`;
+  document.getElementById("s-addr").href=addrLink(p);
+  document.getElementById("s-paid").hidden=true;
   document.getElementById("s-video").href=videoLink(p);
   const th=document.getElementById("s-thumbs"); th.innerHTML="";
   p.imgs.forEach((n,i)=>{const b=document.createElement("button");b.setAttribute("aria-label","Photo "+(i+1));b.innerHTML=`<img src="${src(n)}" alt="">`;b.onclick=()=>show(p,i);th.appendChild(b)});
   show(p,0); dlg.showModal();
 }
 grid.addEventListener("click",e=>{const b=e.target.closest("[data-open]"); if(b) openP(b.dataset.open)});
+document.getElementById("s-pay").addEventListener("click",()=>{document.getElementById("s-paid").hidden=false});
 document.getElementById("s-close").onclick=()=>dlg.close();
 dlg.addEventListener("click",e=>{if(e.target===dlg) dlg.close()});
 </script>
