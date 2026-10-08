@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><circle cx="200" cy="200" r="200" fill="#f6efe3"/><g transform="translate(200 200) rotate(-20) translate(-66 -165) scale(1.1)">
+<defs><clipPath id="ci"><path d="M60 8 C 102 46, 108 128, 88 196 C 81 220, 70 238, 62 250 C 52 238, 38 220, 31 196 C 12 128, 18 46, 60 8 Z"/></clipPath></defs>
+<g clip-path="url(#ci)">
+ <rect x="0" y="0" width="120" height="300" fill="#f6efe3"/>
+ <path d="M-20 -17.599999999999998 L60 -40 L140 -17.599999999999998 L140 106.4 L60 84 L-20 106.4 Z" fill="#a5634d"/>
+ <path d="M34 132 L40.5 118 L47 132 Z" fill="#c9a35f"/><path d="M47 132 L53.5 118 L60 132 Z" fill="#3f7a73"/><path d="M60 132 L66.5 118 L73 132 Z" fill="#c9a35f"/><path d="M73 132 L79.5 118 L86 132 Z" fill="#3f7a73"/>
+ <path d="M-20 168.4 L60 146 L140 168.4 L140 218.4 L60 196 L-20 218.4 Z" fill="#3f7a73"/>
+ <path d="M-20 226.4 L60 204 L140 226.4 L140 322.4 L60 300 L-20 322.4 Z" fill="#a5634d"/>
+</g>
+<path d="M60 8 C 102 46, 108 128, 88 196 C 81 220, 70 238, 62 250 C 52 238, 38 220, 31 196 C 12 128, 18 46, 60 8 Z" fill="none" stroke="#3a2a22" stroke-width="2.4"/>
+<path d="M62 292 C 61 220, 63 130, 60 12" fill="none" stroke="#3a2a22" stroke-width="3.4" stroke-linecap="round"/>
+</g></svg>
