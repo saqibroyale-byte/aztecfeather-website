@@ -249,6 +249,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
 .acc ul,.acc p{margin:0 0 16px;color:var(--ink2);font-size:14px}
 .acc ul{padding-left:18px;display:grid;gap:6px}
 .total{margin:0;font-size:14px;color:var(--muted)}
+.btn-cod{width:100%;margin-top:10px}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pair .btn{font-size:13px;padding:0 12px}
 .secure{margin:-4px 0 0;font-size:12px;color:var(--muted);text-align:center}
 .paid{background:#eef5f1;border:1px solid #cfe3d8;border-radius:12px;padding:16px;font-size:14px;color:var(--ink2);display:grid;gap:12px}
@@ -300,7 +301,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
 </svg>
 
-<div class="announce">Handmade in India <span>✦</span> Delivered across the UAE <span class="x">✦</span><span class="x" style="opacity:1;margin:0">Pay by card or Apple Pay</span></div>
+<div class="announce">Handmade in India <span>✦</span> Delivered across the UAE <span class="x">✦</span><span class="x" style="opacity:1;margin:0">Pay online or cash on delivery</span></div>
 <header>
   <div class="wrap bar">
     <a class="logo" href="#top" aria-label="Aztec Feather home"><img src="img/logo.svg" alt="Aztec Feather" width="384" height="200"></a>
@@ -339,7 +340,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
       <div class="trust-item"><svg><use href="#i-hand"/></svg><div><b>Handmade by artisans</b><span>Beaded and stitched by hand in India</span></div></div>
       <div class="trust-item"><svg><use href="#i-gem"/></svg><div><b>One of a kind</b><span>Small batches, no two exactly alike</span></div></div>
       <div class="trust-item"><svg><use href="#i-video"/></svg><div><b>See it before you buy</b><span>Ask for a video of your exact bag</span></div></div>
-      <div class="trust-item"><svg><use href="#i-truck"/></svg><div><b>UAE delivery AED 15</b><span>Sent from Dubai to your door</span></div></div>
+      <div class="trust-item"><svg><use href="#i-truck"/></svg><div><b>UAE delivery from AED 15</b><span>Pay online or cash on delivery</span></div></div>
     </div>
   </section>
 
@@ -437,7 +438,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
       <div class="steps">
         <div class="step"><span class="num">1</span><b>Choose your bag</b><p>Tap "Buy now" to pay securely by card, Apple Pay or Google Pay. Prefer to chat first? Tap the WhatsApp button instead.</p></div>
         <div class="step"><span class="num">2</span><b>Send your address</b><p>After paying, send us your name and delivery address on WhatsApp. The message is filled in for you.</p></div>
-        <div class="step"><span class="num">3</span><b>Receive it</b><p>We pack your bag in Dubai and deliver it anywhere in the UAE. Delivery is a flat AED 15.</p></div>
+        <div class="step"><span class="num">3</span><b>Receive it</b><p>We pack your bag in Dubai and deliver it anywhere in the UAE. Delivery is AED 15 when you pay online, or AED 25 with cash on delivery.</p></div>
       </div>
     </div>
   </section>
@@ -446,8 +447,8 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
     <div class="wrap faq-grid">
       <div><p class="eyebrow">Help</p><h2 id="faq-h">Questions, answered.</h2><p class="lead" style="margin-top:18px">Can't find what you need? We usually reply on WhatsApp within a few hours.</p><div style="margin-top:26px"><a class="btn btn-ink js-wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask a question</a></div></div>
       <div class="faq">
-        <details><summary>Where do you deliver?</summary><p>Anywhere in the UAE, sent from Dubai, for a flat AED 15. We confirm the delivery time on WhatsApp once your order is in. For orders in India, message our India number below.</p></details>
-        <details><summary>How do I pay?</summary><p>Tap "Buy now" on any bag to pay securely online by card, Apple Pay or Google Pay through Ziina, a payment provider licensed by the Central Bank of the UAE. The price includes AED 15 delivery. You can also order on WhatsApp and pay with a link we send you.</p></details>
+        <details><summary>Where do you deliver?</summary><p>Anywhere in the UAE, sent from Dubai. Delivery is AED 15 when you pay online, or AED 25 with cash on delivery. We confirm the delivery time on WhatsApp once your order is in. For orders in India, message our India number below.</p></details>
+        <details><summary>How do I pay?</summary><p>Tap "Buy now" on any bag to pay securely online by card, Apple Pay or Google Pay through Ziina, a payment provider licensed by the Central Bank of the UAE. The Buy now total includes AED 15 delivery. Prefer to pay when it arrives? Tap "Cash on delivery", send us your address on WhatsApp, and pay the courier in cash or by card (AED 25 delivery).</p></details>
         <details><summary>Will my bag look exactly like the photos?</summary><p>Every bag is made by hand, so beadwork and colours vary slightly from piece to piece. That is part of its charm. Ask us and we'll send a photo or video of the exact bag you'll receive.</p></details>
         <details><summary>What if there's a problem with my order?</summary><p>If your bag arrives damaged or isn't what you ordered, message us on WhatsApp within 48 hours of delivery with a photo and we'll make it right.</p></details>
         <details><summary>How do I care for my bag?</summary><p>Spot clean gently with a dry or slightly damp cloth. Do not wash or soak. Store flat, away from direct sun, and stuff totes with paper to keep their shape.</p></details>
@@ -495,12 +496,13 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
       <p class="desc" id="s-desc"></p>
       <p class="total" id="s-total"></p>
       <a class="btn btn-ter" id="s-pay" href="#" target="_blank" rel="noopener"><svg><use href="#i-card"/></svg><span id="s-paylabel">Buy now</span></a>
+      <a class="btn btn-line btn-cod" id="s-cod" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span id="s-codlabel">Cash on delivery</span></a>
       <div class="paid" id="s-paid" hidden><b>Payment page opened in a new tab.</b> Once you've paid, send us your delivery address so we can ship your bag. <a class="btn btn-wa" id="s-addr" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Send my address</a></div>
       <div class="pair"><a class="btn btn-line" id="s-order" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Order on WhatsApp</a><a class="btn btn-line" id="s-video" href="#" target="_blank" rel="noopener">Ask for a video</a></div>
-      <p class="secure">Secure checkout by Ziina · Card, Apple Pay, Google Pay</p>
+      <p class="secure">Pay online by card, Apple Pay or Google Pay (secure checkout by Ziina), or pay when your bag arrives.</p>
       <div class="acc">
         <details open><summary>Details</summary><ul id="s-points"></ul></details>
-        <details><summary>Delivery &amp; payment</summary><p>Delivered anywhere in the UAE from Dubai for a flat AED 15, included in the Buy now total. Pay securely by card, Apple Pay or Google Pay. After paying, send us your address on WhatsApp.</p></details>
+        <details><summary>Delivery &amp; payment</summary><p>Delivered anywhere in the UAE from Dubai. Pay online with Buy now (card, Apple Pay or Google Pay) and delivery is AED 15. Or choose Cash on delivery and pay the courier in cash or by card when the bag arrives, with AED 25 delivery.</p></details>
         <details><summary>Handmade note &amp; care</summary><p>Made by hand, so beadwork and colours vary slightly from piece to piece. Spot clean gently, do not wash, and store flat.</p></details>
       </div>
     </div>
@@ -509,7 +511,7 @@ dialog::backdrop{background:rgba(30,22,16,.6)}
 
 <script>
 const WA_DUBAI="971582571491", WA_INDIA="918130626722";
-const ZIINA="https://pay.ziina.com/aztecfeather57", DELIVERY=15;
+const ZIINA="https://pay.ziina.com/aztecfeather57", DELIVERY=15, COD_DELIVERY=25;
 const payLink=p=>ZIINA+"?amount="+(p.price+DELIVERY);
 const wa=(n,t)=>"https://wa.me/"+n+"?text="+encodeURIComponent(t);
 const PRODUCTS=[
@@ -552,6 +554,7 @@ const PRODUCTS=[
 const src=n=>"img/"+n+".jpg";
 const orderLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! I'd like to order the ${p.name} (AED ${p.price}). Is it available?`);
 const addrLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! I've just paid AED ${p.price+DELIVERY} for the ${p.name}.\nName: \nPhone: \nDelivery address: `);
+const codLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! I'd like the ${p.name} with CASH ON DELIVERY (AED ${p.price} + AED ${COD_DELIVERY} delivery = AED ${p.price+COD_DELIVERY}).\nName: \nPhone: \nDelivery address (area, building, flat): `);
 const videoLink=p=>wa(WA_DUBAI,`Hi Aztec Feather! Could you send me a video of the ${p.name}?`);
 const general="Hi Aztec Feather! I'd like to see your bag collection.";
 document.querySelectorAll(".js-wa").forEach(a=>a.href=wa(WA_DUBAI,general));
@@ -613,6 +616,8 @@ function openP(id){
   document.getElementById("s-pay").href=payLink(p);
   document.getElementById("s-paylabel").textContent=`Buy now · AED ${p.price+DELIVERY}`;
   document.getElementById("s-addr").href=addrLink(p);
+  document.getElementById("s-cod").href=codLink(p);
+  document.getElementById("s-codlabel").textContent=`Cash on delivery · AED ${p.price+COD_DELIVERY}`;
   document.getElementById("s-paid").hidden=true;
   document.getElementById("s-video").href=videoLink(p);
   const th=document.getElementById("s-thumbs"); th.innerHTML="";
